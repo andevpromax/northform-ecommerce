@@ -18,7 +18,7 @@
 	},
 	"linter": {
 		"enabled": true,
-		"include": ["scripts/setup.mjs"],
+		"ignore": ["scripts/setup.mjs"],
 		"rules": {
 			"recommended": false,
 			"correctness": {
