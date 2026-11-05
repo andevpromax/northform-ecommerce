@@ -1,0 +1,10 @@
+export const REFRESH_TOKEN_KEY = '__neo-refresh-token'
+export const ACCESS_TOKEN_KEY = '__neo-access-token'
+export const STATE_KEY = '__neo-state'
+export const IDP_STATE_KEY = 'state'
+export const REDIRECT_TO_KEY = '__neo-redirect-to'
+export const LOCALE_KEY = '__neo-locale'
+export const CODE_KEY = 'code'
+export const PARTIAL_REGISTRATION_REDIRECT_KEY =
+	'__neo-partial-registration-redirect'
+export const REFRESH_REDIRECT_KEY = '__neo-refresh-redirect'

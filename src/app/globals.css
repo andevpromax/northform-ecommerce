@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+	body {
+		@apply bg-stone-50 text-brand-800 antialiased;
+	}
+	h1 {
+		@apply text-4xl md:text-5xl font-semibold leading-tight tracking-tight;
+	}
+	h2 {
+		@apply text-xl font-semibold;
+	}
+	button,
+	a,
+	input,
+	select {
+		@apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-500;
+	}
+	input:not([type="checkbox"]),
+	select {
+		@apply min-h-11;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	*,
+	::before,
+	::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+@layer components {
+	.panel {
+		@apply rounded-2xl border border-stone-200 bg-white p-6 md:p-8;
+	}
+	.eyebrow {
+		@apply mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand-500;
+	}
+}
+@layer utilities {
+	.focus-ring {
+		@apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-500;
+	}
+	.no-spin::-webkit-inner-spin-button {
+		appearance: none;
+	}
+	.typo-text-lg-regular {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+	.typo-text-lg-bold {
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: 1.6;
+	}
+	.typo-text-md-bold {
+		font-size: .95rem;
+		font-weight: 600;
+	}
+	.typo-text-sm-regular {
+		font-size: .875rem;
+	}
+	.typo-text-sm-medium {
+		font-size: .875rem;
+		font-weight: 500;
+	}
+	.typo-text-2xl-bold {
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+	.typo-headline-md-bold,
+	.typo-headline-xl-bold,
+	.typo-headline-2xl-bold {
+		font-size: 2.5rem;
+		font-weight: 600;
+		line-height: 1.2;
+	}
+}

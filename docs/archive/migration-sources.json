@@ -1,0 +1,952 @@
+[
+	{
+		"source": "packages/features/cart/src/components/shopping-cart/CartContainer.tsx",
+		"file": "src/features/cart/components/shopping-cart/CartContainer.tsx",
+		"sourceSha256": "d8c253b061523133ce1d837955302337d79a22cc0a2427b670fc66791508ebc9",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "db5dfc61503447cd23033cd07860a1432f79ac3b9b889fca359e1f376a15a0cb",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/mutations/useAddToCartMutation.ts",
+		"file": "src/features/cart/hooks/mutations/useAddToCartMutation.ts",
+		"sourceSha256": "37eb0207db2d630b3b812e74e060d1fc5b056b68870c9e7db3d0ec20ccaf70a1",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "71b08de7e9870a55157da12e55d3ba5bba33c037bcd3869f528ee5b6c4d34894",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/store/src/cart/useCheckoutStore.ts",
+		"file": "src/shared/store/cart/useCheckoutStore.ts",
+		"sourceSha256": "f3b7dbf3817f31201ab56f5a2850a3b3341a14532b4850681f9731196c1737be",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "db084cdd83057b146b50d9f2870436d07e3f11d6b37074674b0a7c8997e51178",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/components/checkout/payment/CartPaymentMethod.client.tsx",
+		"file": "src/features/cart/components/checkout/payment/CartPaymentMethod.client.tsx",
+		"sourceSha256": "552280d81e17c26de3e39acbe9767ba82148b583d2ffb1c8ab1b73d9a2fbf5c2",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "405a31d28c859bede6b57995f331424a337a2630de3819f7660e4f0ffcfb2361",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/mutations/useCreateOrderMutation.ts",
+		"file": "src/features/cart/hooks/mutations/useCreateOrderMutation.ts",
+		"sourceSha256": "d9abc5cb6c0204a348680ef3e747c90320948a4544d4f6bae3f4ad2aa4c16e8c",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "892203f987aa9e6876c9d71af321f7ac2cf08cbe9ed11960360b93b48fcfd031",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/Addresses/deliveryAddress.ts",
+		"file": "src/shared/schemas/Addresses/deliveryAddress.ts",
+		"sourceSha256": "dfc7ff99297f68d663746db7e1de21bc730ffa85d05238d380771f4c9fd0ae7e",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "9134aeb961e75c0189b1d720b6687a8860a833ea3e7b4847e96a2670ea976ad3",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/queries/useCartDetailsQuery.ts",
+		"file": "src/features/cart/hooks/queries/useCartDetailsQuery.ts",
+		"sourceSha256": "7c1fec7bb26a91e9cdc64a6c27d54e8d986b1da24dbabc66e14c32b9bb12e070",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "83badee0f3ad324c3ba7ec6ceef3a558709a30d5e152f16746d33e22e89ae582",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "jss/types/src/fields.ts",
+		"file": "src/shared/cms/types/fields.ts",
+		"sourceSha256": "3cc4434da19769c893839b636de2bdc9e49abfa093fd14abca9365db5d97a3cc",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "7d6889dbdf879fc8eb3017e0679848503bdcbd6fce58128dd6c9afdc6be38de2",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/ui/shared/src/components/GeneralErrorAlert.tsx",
+		"file": "src/shared/ui-shared/components/GeneralErrorAlert.tsx",
+		"sourceSha256": "6e08cc912f2ae92673c03905a3fc73736d181d8b3355edb6acab589fddea1822",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "384c1bb49c01a87ecf3fada7b3f9aa151650d0189758e70f4e8bffd0a14643d4",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/features/tracking/src/cjAffiliate/hooks/useCjCartEvent.ts",
+		"file": "src/features/tracking/cjAffiliate/hooks/useCjCartEvent.ts",
+		"sourceSha256": "f6b0c7d7e37f05d6a542d738fdd94fedcba529e9c2bf7b118f33dcc5088ebda3",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "394cce9f5e71b4f98561db880574643861248cdc9d0cb299854216528ef8bc3e",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/features/cart/src/components/shopping-cart/CartClient.tsx",
+		"file": "src/features/cart/components/shopping-cart/CartClient.tsx",
+		"sourceSha256": "216645527523e6277174937d82102261262484b1795f782e1489fe2b0876089c",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "7d60ae8ae3cdf9c025e348d2ddf7eaab43cbf8ee6fbaca2f886ac75baf467d1c",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/components/shopping-cart/CartSkeleton.tsx",
+		"file": "src/features/cart/components/shopping-cart/CartSkeleton.tsx",
+		"sourceSha256": "6bd04f5cdcb11b43be83727095d2926000191ddf888b31375696cdd8c26730c3",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "0384a4e7c9027b7cc2685c7d33d29de4b82fa7705cf07fe124e2a097a4bcd77f",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/components/shopping-cart/EmptyShoppingCart.tsx",
+		"file": "src/features/cart/components/shopping-cart/EmptyShoppingCart.tsx",
+		"sourceSha256": "7d902e3d1e2e0edf90cf8e100fe23e5c37b3c52cc692650c3c59208e5ac4d4ca",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "afd0bc011ecbdaa872716ea88b88aebf2e2758f0dc2e85974a335dabc85655fa",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/api/src/product/addToCart.ts",
+		"file": "src/shared/api/product/addToCart.ts",
+		"sourceSha256": "7922d738dbbfef307fd188f52cb80283190f80e2ca6cd911b5b4d5a111557fc8",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "c42430c0713d2abf4f855faedad8a3527d674369285c50690c2e622f16901232",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/core/constants/src/cart.ts",
+		"file": "src/shared/constants/cart.ts",
+		"sourceSha256": "2e4f86e5fce96daf50000092927f8685482799f2e001ba8f124f423538a50cf3",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "2e4f86e5fce96daf50000092927f8685482799f2e001ba8f124f423538a50cf3",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/hooks/useCookie.tsx",
+		"file": "src/shared/ui/hooks/useCookie.tsx",
+		"sourceSha256": "01afa4505fc4617d26d08847c0acf476c7c041bdfcb902a736c3b6303b1b9a7b",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "01afa4505fc4617d26d08847c0acf476c7c041bdfcb902a736c3b6303b1b9a7b",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/feedback/src/toast/showToast.tsx",
+		"file": "src/features/feedback/toast/showToast.tsx",
+		"sourceSha256": "df2e227e878766fd3b60d9d0b00fb6869d32ea24401f738e404b8409bee41921",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "4dc4c65d25ae690b21d15f2cb551724c9737899cf96e20a433413abeec0ac633",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/features/cart/src/components/checkout/payment/CartPaymentTile.tsx",
+		"file": "src/features/cart/components/checkout/payment/CartPaymentTile.tsx",
+		"sourceSha256": "fee8a95e4a16ea6b6139d3d7e9e277c2be195318b739d663eb07713a5edbab1c",
+		"boundaryReplacement": true,
+		"classification": "adapted source",
+		"sha256": "aa9bf90acc5776b72768601c5e5f3457b3932d8e7bc63959f19d6fb6b847cfb2",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/constants/src/auth.ts",
+		"file": "src/shared/constants/auth.ts",
+		"sourceSha256": "5d38b1ffd1d21189deb69493d60f67dad5d45a87ae190fd9fdfbe1e805c8e294",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "5d38b1ffd1d21189deb69493d60f67dad5d45a87ae190fd9fdfbe1e805c8e294",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/actions-inputs/Button.tsx",
+		"file": "src/shared/ui/actions-inputs/Button.tsx",
+		"sourceSha256": "f377d31128c48531cbae2991ad3237cc15a36d03679b568bc271f3fa76cf9243",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "ba9dd90041835ec76ed7deaa2bb67b0aac2e07732accc19d51b49c2d81e071b1",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/actions-inputs/RadioGroup.tsx",
+		"file": "src/shared/ui/actions-inputs/RadioGroup.tsx",
+		"sourceSha256": "62d38c6256b6508cb9a25f7f130d7721b971125a31e1a1c6983104226378bf69",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "a930d945f7ca6289bd93fe0a02b0af350ccf24cde0169bd38dca25b640175f4e",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/custom/Skeleton.tsx",
+		"file": "src/shared/ui/custom/Skeleton.tsx",
+		"sourceSha256": "773bb0b438171f2ff365bada4b38a27737eab03872af36ec1dc11722eaae3df3",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "4a51cbbab7bc738a8ed5c6f0657c5ba990fdcfbcf1a723be2e09b1de33a7fbcc",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/feedback/Alert.tsx",
+		"file": "src/shared/ui/feedback/Alert.tsx",
+		"sourceSha256": "f1a599628b19cf710248f1cf84c782bde4035b26359308274e2970edc0c3aa7a",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "8db7e331ffef042a848948da79ccf3596a664fd8e69828506e8f4a2c0e1656fb",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/arrow-left-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/arrow-left-16.tsx",
+		"sourceSha256": "05aa1e8a32c3f657ee819db76e0435cff3ddc898faf8c66c10e29b353105897d",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "b1e312fa3633a61fef910a69abd436a04328fe2526e3141ff221af5021e9a80b",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/arrow-right-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/arrow-right-16.tsx",
+		"sourceSha256": "61b076d795fef7df2ef30e4e65743bd7505159d6498ec5040eedf10879ff5b97",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "4ee33b35340b3cd094b6799c17625a1e571130cb25a37749e75274570719bfd4",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/cross-in-circle-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/cross-in-circle-16.tsx",
+		"sourceSha256": "a27cbc1666a6a205120134e767153664737b23956b2989457cb2600d31fa035a",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "25aca17e68105e19bb1c5f752ed24cbc39480d902da7a391316434d328a9f24d",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "jss/atoms/src/Link.tsx",
+		"file": "src/shared/cms/atoms/Link.tsx",
+		"sourceSha256": "12dbb897f89b1e7cd0a5b628f487cd4346d15e7ae0c12094a1c4a8e54f750477",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "7bab081910af4c226ad5b025f8042df91170baf2ee34081583aea19370949afb",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/features/payment-methods/src/hooks/queries/usePaymentMethodsQuery.ts",
+		"file": "src/features/payment-methods/hooks/queries/usePaymentMethodsQuery.ts",
+		"sourceSha256": "98c1635d1dd5b8ddbfe56627c4e8411c95c92c1c5574f3792f687e4059bd4863",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "c5b8dc046d43e42478c908dfe24aa40c7ccda03d46f78d05664dd55f3ac96314",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/payment-methods/src/utils/getMethods.ts",
+		"file": "src/features/payment-methods/utils/getMethods.ts",
+		"sourceSha256": "4aa0210a7ef940028c91e612a2edd6ba58893eb1019a1e3a513e74dfc0e0b3aa",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "3403a504545b2ea2c2fb7298e4166b663806657a7ea9a2f6c2cab4d0ae1eec12",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/tracking/src/ecommerce/mappers.ts",
+		"file": "src/features/tracking/ecommerce/mappers.ts",
+		"sourceSha256": "27993d971f4b25a71c3e0d05b7f32326a516cbde30a9e1ddefc8da9d50a2280d",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "23b5aee2f470d915b3fbd338ecf84c5a5bcd4be7d33cbcb49c33e14fa4a62239",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/tracking/src/ecommerce/sendEcommerceEvent.ts",
+		"file": "src/features/tracking/ecommerce/sendEcommerceEvent.ts",
+		"sourceSha256": "69b46d9e9a40c4243d4885ff326799760a6066954f07226004dbf54aca9c185f",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "c2b793c619da398764bbf08a2a7a3b1586275fa783d43e66dedc0adac2bb1fae",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/features/tracking/src/ecommerce/types.ts",
+		"file": "src/features/tracking/ecommerce/types.ts",
+		"sourceSha256": "c87ae8ec652845fa9b4be56e434e27c93a06fc1d2b5a002ec3b425060d206e9b",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "c87ae8ec652845fa9b4be56e434e27c93a06fc1d2b5a002ec3b425060d206e9b",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/tracking/src/ecommerce/useEcommerceEnrichment.ts",
+		"file": "src/features/tracking/ecommerce/useEcommerceEnrichment.ts",
+		"sourceSha256": "fec750c233a92fa267bd7ab946c4abfbe2fbcb81158490a660c765dd4092ea3b",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "45beb0f86a4a72e21cc9fd3b4b12876fffdbd5adbe7edcc580f35b749cdad359",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/core/utils/src/roundMoney.ts",
+		"file": "src/shared/utils/roundMoney.ts",
+		"sourceSha256": "e822aa4766ef451d2b4c02eaf329b4ac6fa4c6df6c810efbfb65ce3915dba547",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "e822aa4766ef451d2b4c02eaf329b4ac6fa4c6df6c810efbfb65ce3915dba547",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/hooks/src/useLocaleParts.ts",
+		"file": "src/shared/hooks/useLocaleParts.ts",
+		"sourceSha256": "fba621a3914bdfe04a3583861f5063eb02871f0742d1d3b10978f615dc0d92b5",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "ed1b506a0978c53c5eb7596f1c1d26c4447741a08a08cc3c7619bdc5aa033671",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/core/schemas/src/createOrder.ts",
+		"file": "src/shared/schemas/createOrder.ts",
+		"sourceSha256": "9af70994e4d764b033eee6b8ca5cc94acce62a773bb93587c8013876da25dbbb",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "9af70994e4d764b033eee6b8ca5cc94acce62a773bb93587c8013876da25dbbb",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/forms.ts",
+		"file": "src/shared/schemas/forms.ts",
+		"sourceSha256": "96d9dce120007465ef0978ad346f2eaa425087f4eef2e7ec0622cf5ae91b7a63",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "7b757df97fd9a434a816b037b9200c22e8b5df7c1b470e12dec8ba414e3c4076",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/utils/phoneValidation.ts",
+		"file": "src/shared/schemas/utils/phoneValidation.ts",
+		"sourceSha256": "a247f9a2653fc243cce837188f562103e69f93418aa860dfa3599c84aebb532a",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "a247f9a2653fc243cce837188f562103e69f93418aa860dfa3599c84aebb532a",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/utils/validationUtils.ts",
+		"file": "src/shared/schemas/utils/validationUtils.ts",
+		"sourceSha256": "c0e3ec3b0ec4c4280ede41a50394e5498dde36c0a87df9a70491782e06fd8f80",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "5951e602f7d9e5da5ca85c861a40dc5d4bebe95461d1bd5afae40519e3c89e57",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/feedback/LoadingSpinner.tsx",
+		"file": "src/shared/ui/feedback/LoadingSpinner.tsx",
+		"sourceSha256": "f2fd0a229ba861d5c6fe7fb474f69db8e3ba14197efa02683445583ace49881e",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "5f82811888ff59fbeb63bfb7e4a9f070bf9d2df1a6bccfecae0c195ba25874c4",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/check-tick-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/check-tick-16.tsx",
+		"sourceSha256": "c959586f6152d8ad0646e8d1b0aafb66a2e98f517e1f17d1cda09fb76402975c",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "67e1813d80f6c040b635a0f4c37b6fad6e17fc892ce46778a4b1300560fa515f",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/utils/src/cn.ts",
+		"file": "src/shared/utils/cn.ts",
+		"sourceSha256": "37dcdc1425bcbd105a5d4ca4ad44b7995dbac70a5b603bae70f0b0bb63405f93",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "37dcdc1425bcbd105a5d4ca4ad44b7995dbac70a5b603bae70f0b0bb63405f93",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/cart.ts",
+		"file": "src/shared/schemas/cart.ts",
+		"sourceSha256": "03c810185f37369b1569e97f63c9123a7d5fc18c36f482dee538a519c1cd39b9",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "763f97aec4e71e1e1942385622dd3abde7e665f19e9c0766a8d041cabbc74228",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/actions-inputs/ButtonLink.tsx",
+		"file": "src/shared/ui/actions-inputs/ButtonLink.tsx",
+		"sourceSha256": "03a05455174e26b216691983a943d2b5e91437771723650b3083f2f21741d23b",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "56996817f92677232867bbb36d8661ea93d314e6a9b25a8f5006b9562cde6f90",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/discount-coupon-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/discount-coupon-16.tsx",
+		"sourceSha256": "ea1fe2eb4d36b1446f6a6a6979f4368b676531f3e769d928b57774c94b532034",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "8959113bd5cae93465ee2446ce64e725f209db76ef985cf4aaddb5ff1cbbb48d",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/shipping-costs-track-order-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/shipping-costs-track-order-16.tsx",
+		"sourceSha256": "439631ecd63c9a3f585bb6c2654652f465b7a6076f162b36e45d88083d50710c",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "e454473b330f3d3b51e8bf365d1af15aab458c893c6ed94cba19752449ba68e6",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/trash-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/trash-16.tsx",
+		"sourceSha256": "3ec0b3ab756977ab2d18dcaa3387f72574f8dcc8eb0ca0fb8e6181722549186d",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "270d980e3cef081c42bf4651d9a2da201c74c25e489d2c9cab2a146e5e44f63b",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "jss/atoms/src/RichText.tsx",
+		"file": "src/shared/cms/atoms/RichText.tsx",
+		"sourceSha256": "2c8702308edb8b4c37f19ad3a6f11fa6c870e4b6cff7b20b330a465c7987cbed",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "b1322a9a4fd84c57cd6a377954f1b47ec6f445298daff8574dcc4dd86cafcec0",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/ui/shared/src/components/Modal.tsx",
+		"file": "src/shared/ui-shared/components/Modal.tsx",
+		"sourceSha256": "08cc7ba3ec95da04d2d05ed1dbf33fe681277c185f418de35ee2420c326c6be1",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "3e9fa6afc9d10f6b2da2f8b46da8d09d392862aa4a99b55b3657370564b2bd21",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/mutations/useDeleteCartItemMutation.ts",
+		"file": "src/features/cart/hooks/mutations/useDeleteCartItemMutation.ts",
+		"sourceSha256": "8df2913eb1cc51e2490737246461402fe3fc00a162eebc313bcb82953c36407c",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "af35793c6a665fa57366fbc8b5b71e20261e3e23e129323def31b4f48d787578",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/mutations/useDeleteCartMutation.ts",
+		"file": "src/features/cart/hooks/mutations/useDeleteCartMutation.ts",
+		"sourceSha256": "6e537cb8c0ea4397cd135b95faacfc5e05ca1e0e6c5058516663fe4db7d38330",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "c3438728bea532c9f95649b869d65980b0f8794382d7776287b114560af342ac",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/mutations/voucher/useRemoveVoucherMutation.ts",
+		"file": "src/features/cart/hooks/mutations/voucher/useRemoveVoucherMutation.ts",
+		"sourceSha256": "ad002e6f30933754c9050cc147381c270c99604537f7bad2917d2d7a36680f51",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "ff99c871509180ec8920001cda583af64f4013a86683cd8ca5977b1e59a086c1",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/utils/calculateSubtotal.ts",
+		"file": "src/features/cart/utils/calculateSubtotal.ts",
+		"sourceSha256": "0d88418d024a480ba6625ba8103f81e565eea5e30b6f492e2039c0b28e6f336a",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "7a6b17a9a5503742688db06a666d0a56cf27de1dd23c5c8cd787af18664308f1",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/utils/resolveVoucherDiscount.ts",
+		"file": "src/features/cart/utils/resolveVoucherDiscount.ts",
+		"sourceSha256": "15da5f10f14a850f91656da2dfa7e0ff1a84206b8e961a2d58d521f90c55abec",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "01505c003b71709d19056cd82726878fc0c0b35d38abd447d933096b6caaaafd",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/components/shopping-cart/CartPriceSummary.tsx",
+		"file": "src/features/cart/components/shopping-cart/CartPriceSummary.tsx",
+		"sourceSha256": "115809cbc1284a17cf773dc917898e023e5c9653d3700b585a609e5e299719ea",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "391067e2a5045b9eb500f92ebae52c3b8a498e024e84a73b093c014da019f896",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/components/shopping-cart/CartProductTileCard.tsx",
+		"file": "src/features/cart/components/shopping-cart/CartProductTileCard.tsx",
+		"sourceSha256": "4ca69371cba2bc4885e0b2e212b3cbb5f1731437b433f53934a15757beb4f5c6",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "b55cd89230deec2e373e30999646f10e82a4b30f8f5ddbabe153d7029780dff7",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/components/shopping-cart/CouponCodeInput.tsx",
+		"file": "src/features/cart/components/shopping-cart/CouponCodeInput.tsx",
+		"sourceSha256": "4e1261e03b7a5e78fab2fd115bdfa59fc2a3eeeea18b631a14904efa790d3c76",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "fc4efe31d364416bf4fb54d9811cb66aa286b02430233c07023e69c6d652db79",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/shopping-cart-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/shopping-cart-16.tsx",
+		"sourceSha256": "e0f03262d0f39b6c5058c9e61c38fed1a58e2b115c06655f488417a5f15e0147",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "36252586cfdbfe54fe669d49ad79987a685051b3a8cd528acaf0a93db182d3ce",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/paymentMethods.ts",
+		"file": "src/shared/schemas/paymentMethods.ts",
+		"sourceSha256": "5ea0543b335e2bc3e1b8158b530201e60df458ed9888b442201911d661d4f739",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "5ea0543b335e2bc3e1b8158b530201e60df458ed9888b442201911d661d4f739",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/feedback/src/announcer/AnnouncerProvider.tsx",
+		"file": "src/features/feedback/announcer/AnnouncerProvider.tsx",
+		"sourceSha256": "14d955f1a715f0bcca03e35009d0697ddc1f325836adf56da725146697fd34f6",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "0d0fc6bc0a21316a4935f16a78be3b27fc8c1ea4cb399adaced0e74cbd8eeb08",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/cross-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/cross-16.tsx",
+		"sourceSha256": "13f7cf899e350bd8762bfc2605db6508b4a123f790da66019c3104de8433dbd7",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "e7f2cfabfaffb3eb17e838494b8d3cb2e3cadcccccf2adb9166a59983445569d",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/utils/withStyles.tsx",
+		"file": "src/shared/icons/utils/withStyles.tsx",
+		"sourceSha256": "c10b72fac6a4340abbee86eeb4f27ded9ebf0ee9bd1a7afac9694fb86d0ea66e",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "cf91aa5c8c9b2d6f3214b85267d6d75f67daea1ad1d4d57f7dcdb8f3918747a1",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/orderDetail.ts",
+		"file": "src/shared/schemas/orderDetail.ts",
+		"sourceSha256": "3d134fc59ce6c058b71212ac4b7a6557b5157747a13491f0468ab907fc9944ea",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "3d134fc59ce6c058b71212ac4b7a6557b5157747a13491f0468ab907fc9944ea",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/product.ts",
+		"file": "src/shared/schemas/product.ts",
+		"sourceSha256": "1edb0467fcf1855a9140c8d557d5ecf16d970e3ac6a57d3b9ed536e0a6e8c716",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "9d7ae23f682051cf8ae01cfd9e4a52f90c921f7f2c172eb91661bbe129197bc3",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/constants/src/formValidationRegex.ts",
+		"file": "src/shared/constants/formValidationRegex.ts",
+		"sourceSha256": "2cea1505790a91de1b0869b428d89f73e7a171544373029cbc58fe4c2fc93073",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "2cea1505790a91de1b0869b428d89f73e7a171544373029cbc58fe4c2fc93073",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-24x24/spinner-24.tsx",
+		"file": "src/shared/icons/icons/neo-24x24/spinner-24.tsx",
+		"sourceSha256": "0b5532ba9c42904006145f70597d438e5230caf88a38de97e18ef54202e3cded",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "9d9eeb073e5760b9bc176277a466e59def69bba559be2e5d3aedbab72d2ef09c",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/content/Modal.tsx",
+		"file": "src/shared/ui/content/Modal.tsx",
+		"sourceSha256": "65a1a9049f35d529cc214d6ae70d3c028c6d390b07193eaf2914f0e2769f4bdf",
+		"boundaryReplacement": false,
+		"classification": "adapted source",
+		"sha256": "67f11d003829c07ddf1bf2dc94e76f5ab52eedb4d070bc9d00e6df5feb05881c",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/actions/deleteCartAction.ts",
+		"file": "src/features/cart/actions/deleteCartAction.ts",
+		"sourceSha256": "06e0e7f071a14f93dc20e21b12968adbc5867d989a4f5fabe0b11e52ec575155",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "2dfe57acd1e547b42bb9e00ce580dd2745724650fa586e660f635045016e49bb",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/features/cart/src/actions/removeVoucherAction.ts",
+		"file": "src/features/cart/actions/removeVoucherAction.ts",
+		"sourceSha256": "ad10d13161f24c4026334baebbf80e022ef56f709b50515d2d1f8a8e53d4a421",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "fc6d48c8b0926fbf6ed5cc85f705513a52764c56a2895efa83809e36f0d2fa30",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/core/utils/src/formatPriceWithLocale.ts",
+		"file": "src/shared/utils/formatPriceWithLocale.ts",
+		"sourceSha256": "98204b72df7f57b75c41ccb94501540a587e6a9d70f47657b3b4cc376a8d6f79",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "98204b72df7f57b75c41ccb94501540a587e6a9d70f47657b3b4cc376a8d6f79",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/useCartProductTileQuantity.ts",
+		"file": "src/features/cart/hooks/useCartProductTileQuantity.ts",
+		"sourceSha256": "9812d6e4ca234832528f7ae7e469f6d2fe02abbb75818830d084e428b1b0f15a",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "e5dce468f795d0a1492103411dd1de99265a348dc82e538d59d24e2e2d18c221",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/cards/ProductCard.tsx",
+		"file": "src/shared/ui/cards/ProductCard.tsx",
+		"sourceSha256": "d4b991500e879241ef34349c36774577b87eb75192bff6cd331ee55b18d1c936",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "b1fd1f4afe62c9121b6721b781cba957259dbf67d13445303ae57f6ce930a553",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/core/hooks/src/usePrice.ts",
+		"file": "src/shared/hooks/usePrice.ts",
+		"sourceSha256": "4fbfcb5be2be2f7f4339d4e9a6cba1158d57b0df6ff3aefff5072deaa707aebe",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "2a54ae0ef9b323a7715fb76e9f8fc61b5db73f17ade874d1bfc46144c41b9f3a",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/social/grohe-logo-filled.tsx",
+		"file": "src/shared/icons/icons/social/grohe-logo-filled.tsx",
+		"sourceSha256": "9483e9f7e65c2c3acedd1d93b663e225ae6b47134b82cb60695704b3f79368df",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "3da370578e945c35ffff429e97e27bb90f9fc549a6af769f70d41b5f54bef270",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "jss/atoms/src/Image.tsx",
+		"file": "src/shared/cms/atoms/Image.tsx",
+		"sourceSha256": "1012550dce68289ecc4bff1190c5b9573d1a223d4ec39ca114f020aaf2d6e14c",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "da43ea85d676a5c241d312189732d3b311bce4158afb6fa372b934199015c105",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/core/schemas/src/utils/compose.ts",
+		"file": "src/shared/schemas/utils/compose.ts",
+		"sourceSha256": "d16ddc2cf9a940215dddbf8f349f24b260bfb4443254860e7467946a2ebaf520",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "d16ddc2cf9a940215dddbf8f349f24b260bfb4443254860e7467946a2ebaf520",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/shared/src/components/Link.tsx",
+		"file": "src/shared/ui-shared/components/Link.tsx",
+		"sourceSha256": "54aac8107dabfc7576ba288d3ca5834fab732cb6fc873082a901107cdaa1fb4f",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "3643dff14fff8d0e464654c03f984bb823c9e44fa9637af418ec1dc977292a72",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/ui/shared/src/components/QuantityInput.tsx",
+		"file": "src/shared/ui-shared/components/QuantityInput.tsx",
+		"sourceSha256": "3f0c71ec19632dcdef968f144f70057e882f92dc48ee3c1434b4662ddc29a73e",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "87a7574039b7c8e0e05236970093fb927f9fd09b38c27cc5312674ce7123ded5",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/actions-inputs/Form.tsx",
+		"file": "src/shared/ui/actions-inputs/Form.tsx",
+		"sourceSha256": "88c5306b306f8c4f689659fc42964d1c73885beae9843d627f2be9057df569c8",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "08d2f87ce7b9ceeb1c949e59d4829883782804c0f28220f72c680e213d822ea1",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/actions-inputs/Input.tsx",
+		"file": "src/shared/ui/actions-inputs/Input.tsx",
+		"sourceSha256": "9961a70be583cb6892d8912bb0d4fd19592ee38a31f55cf9015d2cd7569429fc",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "48e7a56fbb067420ef6409cd080d0846ebba59ebc49498cf8b5c2060324b3341",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/check-tick-in-circle-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/check-tick-in-circle-16.tsx",
+		"sourceSha256": "5b5b9a92126c276703a3ff48399c4911d36ef06012e0a857ce123d957bfb3758",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "312fdcd7a25c64c73ff2d5a1a8eeb82f94c7a7269ac76a689626ea0b7e6a52d3",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/voucher.ts",
+		"file": "src/shared/schemas/voucher.ts",
+		"sourceSha256": "b37d42a1111268d7c60e591ec4bcc1d88c613b3479cfcc3817f2fca75b42cbba",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "65176a1b6b7d84b9782910c8ebfa7734aab974c280ff6a5f7d2700c537796989",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/mutations/voucher/useApplyVoucherMutation.ts",
+		"file": "src/features/cart/hooks/mutations/voucher/useApplyVoucherMutation.ts",
+		"sourceSha256": "2211e815a8663c7b06656c721b1333b891c462648a2528233d4850b0d3664a10",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "8dece88a86a2ad7bb28116af7f7d78ef179d534eb8f264a3ead30e61f40e2985",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/facet.ts",
+		"file": "src/shared/schemas/facet.ts",
+		"sourceSha256": "52961ad27ebc77bf85eebe3b34b8e66869e9736e7d79d72926328b9b95dac728",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "52961ad27ebc77bf85eebe3b34b8e66869e9736e7d79d72926328b9b95dac728",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-24x24/cross-24.tsx",
+		"file": "src/shared/icons/icons/neo-24x24/cross-24.tsx",
+		"sourceSha256": "563c483edb7bf0c19ab208634887ec29d08e71c47a31be4046302f43bbf2f993",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "a33f34285790a7312d4c7d75d96dfa8ea48edd231a62ad111dd3d352cb5e4603",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-48x48/cross-48.tsx",
+		"file": "src/shared/icons/icons/neo-48x48/cross-48.tsx",
+		"sourceSha256": "86919f89470e585e10e6f9ebd9c5e16d8ddfa8706c5a7a10773bfdad31020c3d",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "eed09be529f1f8156da07040dc90ae468192a24160188c56153dc652b9b55cd7",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/hooks/mutations/useChangeCartEntryQuantity.ts",
+		"file": "src/features/cart/hooks/mutations/useChangeCartEntryQuantity.ts",
+		"sourceSha256": "a216586aef4b7e6f8ef8ef931972514853bc74049d2866f2f5b40d6ac29c9032",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "61f0124e98cbf251ad0eba88558347efe7270a61627d15e6cccd21d7cdfd7793",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/add-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/add-16.tsx",
+		"sourceSha256": "d7690802ee22aaac52796b122428aea9941f2eab0cfba335c3e736b3c1064131",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "761c856b59120c0861820be34258e3d433ae106f7ba19c69f640177d2ee84049",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/icons/neo-16x16/minus-16.tsx",
+		"file": "src/shared/icons/icons/neo-16x16/minus-16.tsx",
+		"sourceSha256": "542a4a70ec64e1cf3bb900359f8c4992045fe01a6a08567efe2a2575df154285",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "5dde4358422110c47c0a69f784243db5aa8f65f45e6caaa9fdf867e7f9b00edb",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/design-system/src/actions-inputs/Label.tsx",
+		"file": "src/shared/ui/actions-inputs/Label.tsx",
+		"sourceSha256": "6b4dc794c698a202eb0d1e4cc22668d05925e2661764e94b2ada1fe2ed947577",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "fcfa7c55e4ae8e7ff9987d9d1a6e12b010191574a078d127496b756ab977b145",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/cart/src/actions/applyVoucherAction.ts",
+		"file": "src/features/cart/actions/applyVoucherAction.ts",
+		"sourceSha256": "068d1eac8b982a8150172b1f3093271852852c73f60573e7870569cf20329170",
+		"boundaryReplacement": true,
+		"classification": "new adapter",
+		"sha256": "ff23f129fdb9ac53275f2af0dfe8f3c5406e58df813a95ddaf0e2dce0e5f7efd",
+		"redistributionReviewRequired": false,
+		"reviewNote": "New implementation replaces the named source boundary; interface/name/contract still require review."
+	},
+	{
+		"source": "packages/ui/design-system/src/custom/Heading.tsx",
+		"file": "src/shared/ui/custom/Heading.tsx",
+		"sourceSha256": "6bca5f533280ff4716c4ddbeaa8cac4b8d4ebf50d320d757c35db29eb926d983",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "6bca5f533280ff4716c4ddbeaa8cac4b8d4ebf50d320d757c35db29eb926d983",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/ui/icons/src/utils/svg.d.ts",
+		"file": "src/shared/icons/utils/svg.d.ts",
+		"sourceSha256": "375409f41ccb1f43728fc050add464ce207e6735e8e8590ffe8242d533b0cd2a",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "375409f41ccb1f43728fc050add464ce207e6735e8e8590ffe8242d533b0cd2a",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/features/tracking/src/ecommerce/__tests__/mappers.test.ts",
+		"file": "src/features/tracking/ecommerce/__tests__/mappers.test.ts",
+		"sourceSha256": "7fa656ff76097a50635592cc5a3182669268f15e1ef67d17e365648e7bbc3a54",
+		"boundaryReplacement": false,
+		"classification": "reused with local imports/formatting",
+		"sha256": "8511ed8d764b80fc1fd8c6ccf068a1a9ede1ce69f0d9debf96a1b67e66266c8e",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	},
+	{
+		"source": "packages/core/schemas/src/utils/__tests__/compose.test.tsx",
+		"file": "src/shared/schemas/utils/__tests__/compose.test.tsx",
+		"sourceSha256": "37f872b418434bae819e8590ec9dbeb7a46b81c7731ffcae7fb5612d2db94416",
+		"boundaryReplacement": false,
+		"classification": "reused unchanged",
+		"sha256": "37f872b418434bae819e8590ec9dbeb7a46b81c7731ffcae7fb5612d2db94416",
+		"redistributionReviewRequired": true,
+		"reviewNote": "Commercial source-derived code/test: confirm ownership and redistribution rights."
+	}
+]

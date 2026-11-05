@@ -1,0 +1,189 @@
+// North & Form commerce schema. Money is stored as integer cents.
+// CHECK constraints that Prisma cannot express live in the migration SQL.
+
+generator client {
+  provider               = "prisma-client"
+  output                 = "../src/generated/prisma"
+  moduleFormat           = "esm"
+  importFileExtension    = "js"
+  generatedFileExtension = "ts"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Product {
+  id          String   @id @db.VarChar(80)
+  sku         String   @unique @db.VarChar(80)
+  position    Int      @unique
+  name        String   @db.VarChar(200)
+  description String
+  priceCents  Int      @map("price_cents")
+  currency    String   @db.Char(3)
+  category    String   @db.VarChar(80)
+  image       String   @db.VarChar(500)
+  available   Boolean  @default(true)
+  stock       Int      @default(0)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  cartItems  CartItem[]
+  orderItems OrderItem[]
+
+  @@map("products")
+}
+
+model GuestSession {
+  id         String   @id @db.Uuid
+  createdAt  DateTime @default(now()) @map("created_at")
+  lastSeenAt DateTime @default(now()) @map("last_seen_at")
+
+  cart   Cart?
+  orders Order[]
+
+  @@index([lastSeenAt])
+  @@map("guest_sessions")
+}
+
+model Cart {
+  id          String   @id @default(uuid()) @db.Uuid
+  sessionId   String   @unique @map("session_id") @db.Uuid
+  voucherCode String?  @map("voucher_code") @db.VarChar(50)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  session GuestSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  voucher Voucher?     @relation(fields: [voucherCode], references: [code], onDelete: SetNull)
+  items   CartItem[]
+
+  @@index([voucherCode])
+  @@map("carts")
+}
+
+model CartItem {
+  id        String   @id @default(uuid()) @db.Uuid
+  cartId    String   @map("cart_id") @db.Uuid
+  productId String   @map("product_id") @db.VarChar(80)
+  quantity  Int
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  cart    Cart    @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  @@unique([cartId, productId])
+  @@index([cartId, createdAt])
+  @@index([productId])
+  @@map("cart_items")
+}
+
+enum DiscountType {
+  PERCENTAGE
+  FIXED
+}
+
+model Voucher {
+  code          String       @id @db.VarChar(50)
+  description   String       @db.VarChar(200)
+  discountType  DiscountType @map("discount_type")
+  discountValue Int          @map("discount_value")
+  active        Boolean      @default(true)
+  validFrom     DateTime?    @map("valid_from")
+  validUntil    DateTime?    @map("valid_until")
+  createdAt     DateTime     @default(now()) @map("created_at")
+  updatedAt     DateTime     @updatedAt @map("updated_at")
+
+  carts Cart[]
+
+  @@map("vouchers")
+}
+
+enum OrderStatus {
+  AWAITING_PAYMENT @map("awaiting_payment")
+  PAYMENT_FAILED   @map("payment_failed")
+  CONFIRMED        @map("confirmed")
+}
+
+enum PaymentStatus {
+  PENDING    @map("Pending")
+  REFUSED    @map("Refused")
+  AUTHORISED @map("Authorised")
+}
+
+model Order {
+  id                 String        @id @default(uuid()) @db.Uuid
+  sessionId          String        @map("session_id") @db.Uuid
+  idempotencyKey     String        @map("idempotency_key") @db.Uuid
+  requestFingerprint String        @map("request_fingerprint") @db.Char(64)
+  status             OrderStatus   @default(AWAITING_PAYMENT)
+  paymentStatus      PaymentStatus @default(PENDING) @map("payment_status")
+  currency           String        @db.Char(3)
+  subtotalCents      Int           @map("subtotal_cents")
+  discountCents      Int           @map("discount_cents")
+  shippingCents      Int           @map("shipping_cents")
+  vatCents           Int           @map("vat_cents")
+  totalCents         Int           @map("total_cents")
+  voucherCode        String?       @map("voucher_code") @db.VarChar(50)
+  voucherDescription String?       @map("voucher_description") @db.VarChar(200)
+  firstName          String        @map("first_name") @db.VarChar(100)
+  lastName           String        @map("last_name") @db.VarChar(100)
+  email              String        @db.VarChar(160)
+  streetAndNumber    String        @map("street_and_number") @db.VarChar(200)
+  city               String        @db.VarChar(250)
+  zipCode            String        @map("zip_code") @db.VarChar(12)
+  country            String        @db.VarChar(60)
+  createdAt          DateTime      @default(now()) @map("created_at")
+  updatedAt          DateTime      @updatedAt @map("updated_at")
+
+  // Restrict: expiring a guest session must never delete order history.
+  session      GuestSession         @relation(fields: [sessionId], references: [id], onDelete: Restrict)
+  items        OrderItem[]
+  transactions PaymentTransaction[]
+
+  @@unique([sessionId, idempotencyKey])
+  @@index([sessionId, createdAt])
+  @@map("orders")
+}
+
+model OrderItem {
+  id             String  @id @default(uuid()) @db.Uuid
+  orderId        String  @map("order_id") @db.Uuid
+  productId      String? @map("product_id") @db.VarChar(80)
+  entryNumber    Int     @map("entry_number")
+  sku            String  @db.VarChar(80)
+  name           String  @db.VarChar(200)
+  category       String  @db.VarChar(80)
+  imageUrl       String  @map("image_url") @db.VarChar(500)
+  unitPriceCents Int     @map("unit_price_cents")
+  quantity       Int
+  lineTotalCents Int     @map("line_total_cents")
+
+  order   Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+
+  @@unique([orderId, entryNumber])
+  @@index([productId])
+  @@map("order_items")
+}
+
+enum PaymentOutcome {
+  SUCCESS @map("success")
+  FAILURE @map("failure")
+}
+
+model PaymentTransaction {
+  id             String         @id @default(uuid()) @db.Uuid
+  orderId        String         @map("order_id") @db.Uuid
+  idempotencyKey String         @unique @map("idempotency_key") @db.Uuid
+  outcome        PaymentOutcome
+  resultStatus   PaymentStatus  @map("result_status")
+  amountCents    Int            @map("amount_cents")
+  currency       String         @db.Char(3)
+  createdAt      DateTime       @default(now()) @map("created_at")
+
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+  @@map("payment_transactions")
+}

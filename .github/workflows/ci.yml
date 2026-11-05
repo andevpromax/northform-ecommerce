@@ -1,0 +1,99 @@
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    name: Quality, Build & E2E
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    # Disposable database for the Express server tests. The credentials only
+    # exist inside this ephemeral CI container.
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: ci
+          POSTGRES_PASSWORD: ci
+          POSTGRES_DB: northform_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U ci -d northform_test"
+          --health-interval 2s
+          --health-timeout 3s
+          --health-retries 30
+
+    env:
+      TEST_DATABASE_URL: postgresql://ci:ci@127.0.0.1:5432/northform_test
+      # Separate database for the E2E run; server tests truncate northform_test.
+      DATABASE_URL: postgresql://ci:ci@127.0.0.1:5432/northform
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.0.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check formatting
+        run: pnpm format:check
+
+      - name: Run lint
+        run: pnpm lint
+
+      - name: Check TypeScript
+        run: pnpm typecheck
+
+      - name: Run unit tests
+        run: pnpm test
+
+      - name: Check Express server TypeScript
+        run: pnpm server:typecheck
+
+      - name: Run Express server tests (applies migrations to the test database)
+        run: pnpm server:test
+
+      - name: Build Express server
+        run: pnpm server:build
+
+      - name: Build application
+        run: pnpm build
+
+      - name: Prepare E2E database
+        run: |
+          PGPASSWORD=ci psql -h 127.0.0.1 -U ci -d northform_test -c 'CREATE DATABASE northform'
+          pnpm server:db:deploy
+          pnpm server:db:seed
+
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install --with-deps
+
+      - name: Run E2E tests (Next.js → Express → PostgreSQL)
+        run: pnpm test:e2e
+
+      - name: Upload Playwright report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore

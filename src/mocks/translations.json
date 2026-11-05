@@ -1,0 +1,49 @@
+{
+	"cart": {
+		"total_order": "Total",
+		"vat": "VAT included",
+		"cancel": "Cancel",
+		"remove_cart_product": "Remove {productName}",
+		"coupon_successfully_applied": "Coupon successfully applied",
+		"apply_coupon_code": "Apply coupon code",
+		"shipping": "Delivery",
+		"id": "Cart",
+		"subtotal": "Subtotal",
+		"modal_description": "This item will be removed from your cart.",
+		"empty_cart": "Empty cart",
+		"coupon_code": "Coupon code",
+		"product_number": "Product",
+		"remove_cart": "Remove",
+		"discounts": "Discounts",
+		"code_not_valid": "Code not valid",
+		"remove_item": "Remove this item?",
+		"code_required": "Enter a coupon code",
+		"code_character_limit": "Coupon code is too long"
+	},
+	"modal": {
+		"close": "Close"
+	},
+	"components": {
+		"general_error_alert": {
+			"title": "Something went wrong",
+			"description": "Please refresh and try again."
+		}
+	},
+	"close_notification": "Close notification",
+	"pdp": {
+		"increase_quantity": "Increase quantity",
+		"decrease_quantity": "Decrease quantity",
+		"product_quantity_label": "Quantity"
+	},
+	"ModalDescription": {
+		"modal_empty_cart_description": "Remove all products from your cart?"
+	},
+	"feedback": {
+		"announcement": {
+			"quantity_updated": "Quantity updated to {quantity}"
+		}
+	},
+	"api": {
+		"input_body_not_matching": "Please check your order details"
+	}
+}
